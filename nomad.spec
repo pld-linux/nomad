@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Networking
 Source0:	ftp://ftp.ncl.ac.uk/pub/local/npac/%{name}-%{version}.tar.gz
+# Source0-md5:	f9caeb8b0609144f1599978540eaa109
 Patch0:		%{name}-path.patch
 URL:		http://netmon.ncl.ac.uk/
 BuildRequires:	ORBit-devel

@@ -1,0 +1,14 @@
+--- nomad-0.3.2/nomad.desktop~	2005-02-07 00:26:06.552079648 +0100
++++ nomad-0.3.2/nomad.desktop	2005-02-07 00:29:38.888799560 +0100
+@@ -1,7 +1,10 @@
+ [Desktop Entry]
+ Name=Nomad
+ Comment=Network Mapping & Monitoring Tool
++Comment[pl]=Narzędzie do tworzenia struktury oraz monitoringu sieci
+ Exec=nomad
+ Icon=nomad.png
+-Terminal=0
++Terminal=false
+ Type=Application
++Categories=GTK;GNOME;Network;
++# vi: set encoding=UTF-8

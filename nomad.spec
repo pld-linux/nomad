@@ -58,11 +58,11 @@ rm -rf $RPM_BUILD_ROOT
 GCONF_CONFIG_SOURCE=`%{_bindir}/gconftool --get-default-source`; export GCONF_CONFIG_SOURCE
 %{_bindir}/gconftool --shutdown
 %{_bindir}/gconftool --makefile-install-rule %{_sysconfdir}/gconf/schemas/nomad.schemas
-%{_bindir}/gconftool --shutdown                                                            
+%{_bindir}/gconftool --shutdown
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS README 
+%doc AUTHORS README
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/gconf/*/*.schemas
 %{_applnkdir}/Network/Misc/*.desktop

@@ -7,6 +7,7 @@ License:	GPL
 Group:		Networking
 Source0:	ftp://ftp.ncl.ac.uk/pub/local/npac/%{name}-%{version}.tar.gz
 # Source0-md5:	905c638d103a9c00ba5b0401e97d3772
+Patch0:		%{name}-desktop.patch
 URL:		http://netmon.ncl.ac.uk/
 BuildRequires:	ORBit-devel
 BuildRequires:	GConf-devel >= 1.0.4
@@ -39,6 +40,7 @@ zintegrowanym monitorowaniem.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing aclocal.m4
@@ -55,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	internetdir=%{_applnkdir}/Network/Misc
+	internetdir=%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -71,6 +73,6 @@ GCONF_CONFIG_SOURCE=`%{_bindir}/gconftool --get-default-source`; export GCONF_CO
 %doc AUTHORS README
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/gconf/*/*.schemas
-%{_applnkdir}/Network/Misc/*.desktop
+%{_desktopdir}
 %{_datadir}/%{name}
 %{_pixmapsdir}/*

@@ -61,7 +61,7 @@ GCONF_CONFIG_SOURCE=`%{_bindir}/gconftool --get-default-source`; export GCONF_CO
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS README doc/*
+%doc AUTHORS README 
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/gconf/*/*.schemas
 %{_applnkdir}/Network/Misc/*.desktop

@@ -16,7 +16,7 @@ BuildRequires:	libglade-devel
 BuildRequires:	gnome-libs-devel >= 1.0.4
 BuildRequires:	libstdc++-devel
 Requires:	fping
-Requires:	ucd-snmp-utils
+Requires:	net-snmp-utils
 Requires(post):	/usr/X11R6/bin/gconftool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

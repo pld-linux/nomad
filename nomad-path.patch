@@ -1,0 +1,12 @@
+diff -urN nomad-0.3.1.org/struct/header.h nomad-0.3.1/struct/header.h
+--- nomad-0.3.1.org/struct/header.h	Tue Mar  5 21:00:28 2002
++++ nomad-0.3.1/struct/header.h	Tue Mar  5 21:01:06 2002
+@@ -25,7 +25,7 @@
+ #include "../config.h"
+ 
+ #define DATA_DIR ".nomad"
+-#define SHARE_DIR "/usr/share/nomad"
++#define SHARE_DIR "/usr/X11R6/share/nomad"
+ 
+ #define NUM_PROCESSES 4
+ 

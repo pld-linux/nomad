@@ -73,6 +73,6 @@ GCONF_CONFIG_SOURCE=`%{_bindir}/gconftool --get-default-source`; export GCONF_CO
 %doc AUTHORS README
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/gconf/*/*.schemas
-%{_desktopdir}
+%{_desktopdir}/*.desktop
 %{_datadir}/%{name}
 %{_pixmapsdir}/*

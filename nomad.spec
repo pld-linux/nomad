@@ -52,8 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	internetdir=%{_applnkdir}/Network/Misc
 
-gzip -9nf AUTHORS README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -65,7 +63,7 @@ GCONF_CONFIG_SOURCE=`%{_bindir}/gconftool --get-default-source`; export GCONF_CO
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.gz
+%doc AUTHORS README doc/*
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/gconf/*/*.schemas
 %{_applnkdir}/Network/Misc/*.desktop

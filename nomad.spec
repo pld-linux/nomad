@@ -1,19 +1,21 @@
 Summary:	A network mapping and monitoring program
 Summary(pl):	Program analizuj±cy oraz monitoruj±cy sieci
 Name:		nomad
-Version:	0.3.1
+Version:	0.3.2
 Release:	1
 License:	GPL
 Group:		Networking
 Source0:	ftp://ftp.ncl.ac.uk/pub/local/npac/%{name}-%{version}.tar.gz
-# Source0-md5:	f9caeb8b0609144f1599978540eaa109
-Patch0:		%{name}-path.patch
+# Source0-md5:	905c638d103a9c00ba5b0401e97d3772
 URL:		http://netmon.ncl.ac.uk/
 BuildRequires:	ORBit-devel
 BuildRequires:	GConf-devel >= 1.0.4
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gdk-pixbuf-devel >= 0.10.1
-BuildRequires:	libglade-devel
 BuildRequires:	gnome-libs-devel >= 1.0.4
+BuildRequires:	libglade-devel
+BuildRequires:	libglade-gnome-devel
 BuildRequires:	libstdc++-devel
 Requires:	fping
 Requires:	net-snmp-utils
@@ -37,9 +39,13 @@ zintegroawnym monitorowaniem.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
+rm -f missing aclocal.m4
+%{__aclocal} -I macros
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure \
 	--with-gnome
 %{__make}

@@ -32,10 +32,10 @@ presented as a topology dia gram with simple integrated monitoring.
 
 %description -l pl
 Nomad to program zaprojektowany do automatycznego odkrywania sieci
-lokalnej, u¿ywaj±cy SNMP do indentyfikacji urz±dzeñ sieciowych oraz
-sprawdzania w jaki sposób s± one fizycznie po³aczone. Sieæ jest
+lokalnej, u¿ywaj±cy SNMP do identyfikacji urz±dzeñ sieciowych oraz
+sprawdzania w jaki sposób s± one fizycznie po³±czone. Sieæ jest
 prezentowana w postaci topologicznego diagramu dia z prostym
-zintegroawnym monitorowaniem.
+zintegrowanym monitorowaniem.
 
 %prep
 %setup -q

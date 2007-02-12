@@ -1,5 +1,5 @@
 Summary:	A network mapping and monitoring program
-Summary(pl):	Program analizuj±cy oraz monitoruj±cy sieci
+Summary(pl.UTF-8):   Program analizujÄ…cy oraz monitorujÄ…cy sieci
 Name:		nomad
 Version:	0.3.2
 Release:	1
@@ -31,10 +31,10 @@ a local network, using SNMP to identify network devices and work out
 how they are physically connected together. The network is then
 presented as a topology dia gram with simple integrated monitoring.
 
-%description -l pl
+%description -l pl.UTF-8
 Nomad to program zaprojektowany do automatycznego odkrywania sieci
-lokalnej, u¿ywaj±cy SNMP do identyfikacji urz±dzeñ sieciowych oraz
-sprawdzania w jaki sposób s± one fizycznie po³±czone. Sieæ jest
+lokalnej, uÅ¼ywajÄ…cy SNMP do identyfikacji urzÄ…dzeÅ„ sieciowych oraz
+sprawdzania w jaki sposÃ³b sÄ… one fizycznie poÅ‚Ä…czone. SieÄ‡ jest
 prezentowana w postaci topologicznego diagramu dia z prostym
 zintegrowanym monitorowaniem.
 

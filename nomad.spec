@@ -1,5 +1,5 @@
 Summary:	A network mapping and monitoring program
-Summary(pl.UTF-8):   Program analizujący oraz monitorujący sieci
+Summary(pl.UTF-8):	Program analizujący oraz monitorujący sieci
 Name:		nomad
 Version:	0.3.2
 Release:	1
